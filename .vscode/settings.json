@@ -14,7 +14,7 @@
     "wait_sync": "1",
     "torizon_run_as": "torizon",
     "torizon_app_root": "/home/torizon/app",
-    "docker_tag": "v1.0",
+    "docker_tag": "1.0",
     "tcb.packageName": "cputemp",
     "tcb.version": "3.14.0",
     "torizon.gpuPrefixRC": true,
