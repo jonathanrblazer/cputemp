@@ -13,7 +13,7 @@ services:
       - debug
       
   cputemp:
-    platform: linux/arm64   # ← ADD THIS
+    platform: linux/arm64   # ← ADD THIS - TEST - I am SSH'd in
     build:
       context: .
       dockerfile: Dockerfile
