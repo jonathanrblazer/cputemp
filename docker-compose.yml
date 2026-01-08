@@ -1,0 +1,24 @@
+services:
+  cputemp-debug:
+    platform: linux/arm64   # ← ADD THIS to fix "no manifest" error?
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+      args:
+        IMAGE_ARCH: arm64
+    image: ${LOCAL_REGISTRY}:5002/cputemp-debug:${TAG}
+    ports:
+      - ${DEBUG_SSH_PORT}:${DEBUG_SSH_PORT}
+    profiles:
+      - debug
+      
+  cputemp:
+    platform: linux/arm64   # ← ADD THIS
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        IMAGE_ARCH: arm64
+    image: ${DOCKER_LOGIN}/cputemp:${TAG}
+    profiles:
+      - release

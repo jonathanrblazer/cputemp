@@ -1,0 +1,4 @@
+services:
+  cputemp:
+    image: jonathanrblazer/cputemp:v1.0
+    platform: linux/arm64

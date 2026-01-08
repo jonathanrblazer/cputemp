@@ -1,0 +1,8 @@
+{
+    "projectName": "cputemp",
+    "templateName": "cppConsole",
+    "containerName": "cputemp",
+    "torizonOSMajor": "7",
+    "hasCustomFields": false,
+    "customFields": []
+}
